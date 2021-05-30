@@ -10,4 +10,15 @@ function nextImage() {
     document.getElementById("image").src=images[index];
 
     index++
+
+
+if(index == 4) {
+    index=1;
+    document.getElementById("image").src="https://images.unsplash.com/photo-1517524501745-d45ba4383fa7?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+}
+
+else {
+    document.getElementById("image").src=images[index];
+}
+index++
 }
